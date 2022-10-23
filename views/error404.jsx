@@ -13,7 +13,7 @@ function error404 () {
                   Photo By: <a href="https://unsplash.com/@markadriane">Mark Adriane</a> on <a href="https://unsplash.com/">Unsplash</a>
                 </div>
               </div>
-                <p>Oops, sorry, we can't fond this page!</p>
+                <p>Oops, sorry, we can't find this page!</p>
             </main>
         </Def>
     )
