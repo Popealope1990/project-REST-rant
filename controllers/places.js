@@ -6,10 +6,9 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  console.log(req.body)
   if (!req.body.pic) {
     //Default image if on is not provided
-    req.body.pic = '../public/images/default-picture.jpg'
+    req.body.pic = 'images/default-picture.jpg'
   }
   if (!req.body.city) {
     req.body.city = 'NowhereVille'
