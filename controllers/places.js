@@ -44,11 +44,23 @@ router.post('/', (req, res) => {
 
 //Delete
 router.delete('/:id', (req, res) => {
-  res.send('Delete Route Good!')
+  let id= Number(req.params.id)
+  if (isNaN(id)) {
+    res.render('error404')
+  }
+  else if (!places[id]) {
+    res.render('error404')
+  }
+  else {
+    places.splice(id, 1)
+  res.redirect('/places')
+  }
 })
 
 // Edit
-
+router.get('/:id/edit', (req, res) => {
+  res.send('<h1>edit page</h1>')
+})
 
 
 
