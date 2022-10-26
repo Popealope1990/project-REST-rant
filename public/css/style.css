@@ -43,3 +43,13 @@ nav a:hover {
   color: pink;
   text-decoration: none;
 }
+
+.RandCbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ratings .comments {
+  padding-top: 15px;
+}
